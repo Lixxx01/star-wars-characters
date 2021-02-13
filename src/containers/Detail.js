@@ -18,7 +18,6 @@ export default function Detail() {
     se ejecturá cada vez que cambie el id
     */
    useEffect(() => {
-     console.log('h')
     api.get(`people/${id}`)
         .then(character => {
             setDetail(character.data)
